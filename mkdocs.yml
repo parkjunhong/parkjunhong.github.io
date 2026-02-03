@@ -9,14 +9,14 @@ theme:
   language: ko
   palette:
     # 라이트 모드
-    - scheme: default
+    - scheme: slate
       primary: indigo
       accent: indigo
       toggle:
         icon: material/weather-sunny
         name: Switch to dark mode
     # 다크 모드
-    - scheme: slate
+    - scheme: default
       primary: indigo
       accent: indigo
       toggle:
