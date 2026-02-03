@@ -1,0 +1,47 @@
+site_name: Tech Wiki & Manual
+site_url: https://<USERNAME>.github.io/<REPO-NAME>/
+site_author: <YOUR_NAME>
+site_description: Technical documentation and wiki.
+
+# 1. 테마 설정 (Material)
+theme:
+  name: material
+  language: ko
+  palette:
+    # 라이트 모드
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    # 다크 모드
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+  features:
+    - navigation.tabs # 상단 탭 네비게이션
+    - navigation.sections # 섹션별 그룹화
+    - navigation.top # 맨 위로 가기 버튼
+    - search.suggest # 검색어 제안
+    - search.highlight # 검색 결과 하이라이트
+    - content.code.copy # 코드 복사 버튼
+
+# 2. 마크다운 확장 기능 (기술 문서용 필수 조합)
+markdown_extensions:
+  - admonition # 경고/참고 박스 (!!! note 등)
+  - pymdownx.details # 접기/펼치기 기능
+  - pymdownx.superfences # 코드 블록 중첩 지원
+  - pymdownx.highlight: # 코드 하이라이팅
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets # 외부 코드 삽입 지원
+  - toc:
+      permalink: true # 헤더 옆에 앵커 링크 생성
+
+# 3. 플러그인
+plugins:
+  - search
