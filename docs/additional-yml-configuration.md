@@ -1,14 +1,16 @@
 # code-example-to-springboot
+
 Code Example to spring boot.
 
+# configuration (설정)
 
-# configuration (설정) 
 1. Additional configuration files.\
 기본 application.yml 에 추가로 xxx.yml 을 작성해서 사용하는...
 
 예시)
 프로그램 경로 하위 foo/ 디렉토리 아래에
 __./config/bar.yml (새로 추가한 설정파일)__
+
 ```yml
 foo:
   bar:
@@ -19,7 +21,9 @@ foo:
       name: Foo1
       age: 31
 ```
+
 __Bar.java: 데이터 모델__
+
 ```java
 package my.model;
 
@@ -46,7 +50,9 @@ public class Bar {
     this.name = name;
   }
 ```
+
 __MyConfigration.java: 설정 클래스__
+
 ```java
 package my.configuration;
 
@@ -70,6 +76,7 @@ public class MyConfiguration{
 ```
 
 __MyController.java: 사용예시 테스트 클래스.__
+
 ```java
 package my.controller;
 
@@ -102,13 +109,13 @@ public class MyController {
 ```
 
 __프로그램 구동명령__
+
 ```
   java -jar myproject.jar --spring.config.additional-locatoin=file:./config/bar.yml
 ```
 
 __데이터 조회__
+
 ```bash
   curl -X GET http://localhost:1234/my/bar
 ```
-
-

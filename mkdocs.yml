@@ -1,7 +1,7 @@
-site_name: Tech Wiki & Manual
-site_url: https://<USERNAME>.github.io/<REPO-NAME>/
-site_author: <YOUR_NAME>
-site_description: Technical documentation and wiki.
+site_name: 상상, 그 이상의 상상
+site_url: https://parkjunhong.github.io/
+site_author: 박준홍 (Park, Jun-Hong, [EMAIL_ADDRESS])
+site_description: 우리가 생각하는 그 이상의 이야기.
 
 # 1. 테마 설정 (Material)
 theme:
