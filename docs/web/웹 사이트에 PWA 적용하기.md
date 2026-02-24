@@ -2,7 +2,7 @@
 
 크롬 주소창 오른쪽에 나타나는 "앱에서 열기" 또는 "설치" 아이콘은 해당 사이트가 **PWA(Progressive Web App)** 조건을 충족했을 때 브라우저가 자동으로 표시해 주는 기능입니다.
 
-![alt text](pwa_example.png)
+![alt text](./images/pwa_example.png)
 
 ---
 
@@ -164,4 +164,5 @@ PWA의 핵심인 **서비스 워커(`sw.js`)** 파일 역시 `{root}` 디렉토�
 
 1. Chrome 브라우저로 접속합니다.
 2. **F12 (개발자 도구) → Application 탭 → Service Workers** 메뉴에서 상태가 `Activated and is running`인지 확인합니다.
+  ![alt text](./images/pwa_service_worker.png)
 3. 잠시 기다리면 주소창 오른쪽에 모니터 모양의 **설치 아이콘**이 나타납니다.
