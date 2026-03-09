@@ -1,0 +1,1671 @@
+
+<!doctype html>
+<html lang="ko" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="우리가 생각하는 그 이상의 이야기.">
+      
+      
+        <meta name="author" content="박준홍 (Park, Jun-Hong, [EMAIL_ADDRESS])">
+      
+      
+        <link rel="canonical" href="https://parkjunhong.github.io/spring/Spire%20Office%20Free%20To%20Apache%20POI/">
+      
+      
+        <link rel="prev" href="../../github%20pages/MkDocs%2C%20Material%20for%20MkDocs%2C%20GitHub%20Actions/">
+      
+      
+        <link rel="next" href="../../web/%EC%9B%B9%20%EC%82%AC%EC%9D%B4%ED%8A%B8%EC%97%90%20PWA%20%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.4">
+    
+    
+      
+        <title>Spire Office Free To Apache POI - 상상, 그 이상의 상상</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#spire-office-free-to-apache-poi" class="md-skip">
+          콘텐츠로 이동
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="상단/헤더">
+    <a href="../.." title="상상, 그 이상의 상상" class="md-header__button md-logo" aria-label="상상, 그 이상의 상상" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            상상, 그 이상의 상상
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Spire Office Free To Apache POI
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="검색" placeholder="검색" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="검색">
+        
+        <button type="reset" class="md-search__icon md-icon" title="지우기" aria-label="지우기" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            검색 초기화
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="탭" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  안녕하세요, '상상, 그 이상의 상상'입니다
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../Java/record%20%28JDK11%29/" class="md-tabs__link">
+          
+  
+  
+  Java
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../VSCode%20Snippets/Eclipse%20to%20VSCode/" class="md-tabs__link">
+          
+  
+  
+  VSCode Snippets
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../github%20pages/MkDocs%2C%20Material%20for%20MkDocs%2C%20GitHub%20Actions/" class="md-tabs__link">
+          
+  
+  
+  Github pages
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  
+  Spring
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../web/%EC%9B%B9%20%EC%82%AC%EC%9D%B4%ED%8A%B8%EC%97%90%20PWA%20%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0/" class="md-tabs__link">
+          
+  
+  
+  Web
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="네비게이션" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="상상, 그 이상의 상상" class="md-nav__button md-logo" aria-label="상상, 그 이상의 상상" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    상상, 그 이상의 상상
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    안녕하세요, '상상, 그 이상의 상상'입니다
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Java
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Java
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Java/record%20%28JDK11%29/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    record (JDK11)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    VSCode Snippets
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    VSCode Snippets
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../VSCode%20Snippets/Eclipse%20to%20VSCode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Eclipse to VSCode
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Github pages
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Github pages
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../github%20pages/MkDocs%2C%20Material%20for%20MkDocs%2C%20GitHub%20Actions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MkDocs, Material for MkDocs, GitHub Actions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Spring
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Spring
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Spire Office Free To Apache POI
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Spire Office Free To Apache POI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="목차">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      목차
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 가장 먼저 할 판단
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 마이그레이션 전체 절차
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 마이그레이션 전체 절차">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2-1-spire" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2-1. 현재 Spire 사용처 전수조사
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-apache-poi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Apache POI 대상 기술 매핑
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 의존성 교체
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. 추천하는 전환 방식
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. 추천하는 전환 방식">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#5-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5-1. 한 번에 갈아엎지 말고 어댑터 계층을 먼저 만드세요
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. 기능별 상세 마이그레이션 방법
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Web
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Web
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../web/%EC%9B%B9%20%EC%82%AC%EC%9D%B4%ED%8A%B8%EC%97%90%20PWA%20%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PWA(Progressive Web App) 설치 버튼 활성화하기
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="목차">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      목차
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 가장 먼저 할 판단
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 마이그레이션 전체 절차
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 마이그레이션 전체 절차">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2-1-spire" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2-1. 현재 Spire 사용처 전수조사
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-apache-poi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Apache POI 대상 기술 매핑
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 의존성 교체
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. 추천하는 전환 방식
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. 추천하는 전환 방식">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#5-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5-1. 한 번에 갈아엎지 말고 어댑터 계층을 먼저 만드세요
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. 기능별 상세 마이그레이션 방법
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="spire-office-free-to-apache-poi">Spire Office Free To Apache POI<a class="headerlink" href="#spire-office-free-to-apache-poi" title="Permanent link">&para;</a></h1>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>기존 기능을 Spire 기준으로 먼저 분해하고, 그다음 Apache POI에서 대체 가능한 영역과 불가능한 영역을 나눠서 마이그레이션 절차로 정리해보겠습니다. PDF 변환·렌더링처럼 POI가 직접 못 하는 부분이 있는지도 같이 체크하겠습니다.
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>핵심 차이점이 하나 보입니다. Apache POI는 Excel 쪽이 가장 성숙하고, Word/PowerPoint도 지원하지만 Spire처럼 “통합형 상용 API 느낌의 1:1 대체”는 아닙니다. 특히 PDF 변환·이미지 렌더링·고급 레이아웃 쪽은 사전에 분리해서 보셔야 합니다.
+</code></pre></div>
+<p><strong>Spire.Office.Free → Apache POI 마이그레이션은 “라이브러리 교체”가 아니라 “기능별 재설계”에 가깝습니다.</strong> Apache POI는 Excel 지원이 가장 성숙하고, Word/PowerPoint도 지원하지만 Spire처럼 모든 Office 기능을 하나의 통합 API 감성으로 1:1 치환해 주지는 않습니다. 또 POI의 주된 범위는 <strong>MS Office 문서 포맷 조작</strong>이며, PDF 변환 같은 영역은 별도 판단이 필요합니다. 현재 최신 안정 버전은 <strong>Apache POI 5.5.1</strong>입니다. (<a href="https://poi.apache.org/download.html?utm_source=chatgpt.com" title="Apache POI™ - Download Release Artifacts">Apache POI</a>)</p>
+<h2 id="1">1. 가장 먼저 할 판단<a class="headerlink" href="#1" title="Permanent link">&para;</a></h2>
+<p>먼저 지금 Spring Boot 서비스에서 Spire로 무엇을 하는지 기능을 쪼개야 합니다.</p>
+<p>이 분류가 제일 중요합니다.</p>
+<ul>
+<li>
+<p><strong>A. 직접 이전 쉬움</strong></p>
+</li>
+<li>
+<p>Excel 읽기/쓰기</p>
+</li>
+<li>셀 값, 스타일, 병합, 수식, 시트 복사 수준</li>
+<li>DOCX 텍스트/문단/표 생성</li>
+<li>
+<p>PPTX 슬라이드/텍스트/이미지 기본 조작</p>
+</li>
+<li>
+<p><strong>B. 조건부 이전</strong></p>
+</li>
+<li>
+<p>대용량 Excel 생성</p>
+</li>
+<li>암호 문서 처리</li>
+<li>차트/도형/이미지 포함 문서</li>
+<li>
+<p>오래된 binary 포맷(.xls/.doc/.ppt) 지원</p>
+</li>
+<li>
+<p><strong>C. 별도 검토 필요</strong></p>
+</li>
+<li>
+<p>PDF 변환/렌더링</p>
+</li>
+<li>높은 수준의 문서 레이아웃 fidelity</li>
+<li>Spire 전용 편의 API에 많이 의존한 부분</li>
+</ul>
+<p>Apache POI는 Excel(HSSF/XSSF/SXSSF)이 가장 성숙하고, Word(HWPF/XWPF), PowerPoint(HSLF/XSLF)도 지원합니다. 다만 POI 자체 소개에서도 Excel 쪽이 가장 발전되어 있고 Word/PowerPoint는 계속 발전 중이라고 설명합니다. (<a href="https://poi.apache.org/?utm_source=chatgpt.com" title="Apache POI™ - the Java API for Microsoft Documents">Apache POI</a>)</p>
+<hr />
+<h2 id="2">2. 마이그레이션 전체 절차<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
+<h3 id="2-1-spire">2-1. 현재 Spire 사용처 전수조사<a class="headerlink" href="#2-1-spire" title="Permanent link">&para;</a></h3>
+<p>가장 먼저 해야 할 일은 코드에서 <code>com.spire</code> import를 전부 수집하는 것입니다.</p>
+<p>조사 결과를 이런 식으로 정리하세요.</p>
+<ul>
+<li>패키지/클래스명</li>
+<li>파일 종류: xlsx / xls / docx / doc / pptx / ppt / pdf</li>
+<li>동작: 생성 / 읽기 / 수정 / 변환 / 이미지 추출 / 텍스트 추출 / 암호</li>
+<li>입력/출력 크기</li>
+<li>HTTP 응답 다운로드인지, 배치 생성인지</li>
+<li>장애 허용 수준: 서식 100% 동일해야 하는지, 내용만 같으면 되는지</li>
+</ul>
+<p>예시 분류:</p>
+<ul>
+<li><code>Workbook</code>, <code>Worksheet</code>, <code>CellRange</code> 사용 → Excel 영역</li>
+<li><code>Document</code>, <code>Section</code>, <code>Paragraph</code>, <code>Table</code> 사용 → Word 영역</li>
+<li><code>Presentation</code>, <code>Slide</code>, <code>Shape</code> 사용 → PowerPoint 영역</li>
+<li><code>SaveToFile(... PDF ...)</code>, <code>SaveToStream(... PDF ...)</code> → <strong>POI 단독 대체 불가 가능성 높음</strong></li>
+</ul>
+<p>이 단계에서 반드시 <strong>“Spire API 사용 목록”과 “대체 목표 API 목록”</strong>을 1:N으로 매핑해야 합니다.</p>
+<hr />
+<h2 id="3-apache-poi">3. Apache POI 대상 기술 매핑<a class="headerlink" href="#3-apache-poi" title="Permanent link">&para;</a></h2>
+<p>POI는 파일 종류별로 모듈이 나뉩니다.</p>
+<ul>
+<li>
+<p><strong>Excel</strong></p>
+</li>
+<li>
+<p><code>.xls</code> → <code>HSSF</code></p>
+</li>
+<li><code>.xlsx</code> → <code>XSSF</code></li>
+<li>대용량 <code>.xlsx</code> 쓰기 → <code>SXSSF</code></li>
+<li>
+<p>공통 인터페이스 → <code>org.apache.poi.ss.usermodel.*</code></p>
+</li>
+<li>
+<p><strong>Word</strong></p>
+</li>
+<li>
+<p><code>.doc</code> → <code>HWPF</code></p>
+</li>
+<li>
+<p><code>.docx</code> → <code>XWPF</code></p>
+</li>
+<li>
+<p><strong>PowerPoint</strong></p>
+</li>
+<li>
+<p><code>.ppt</code> → <code>HSLF</code></p>
+</li>
+<li>
+<p><code>.pptx</code> → <code>XSLF</code></p>
+</li>
+<li>
+<p><strong>OLE2/문서 속성</strong></p>
+</li>
+<li>
+<p><code>POIFS</code>, <code>HPSF</code></p>
+</li>
+</ul>
+<p>이 구조는 POI 공식 컴포넌트 문서에 정리되어 있습니다. Excel은 공통 SS API가 있고, Word/PowerPoint는 포맷별 구현이 나뉩니다. (<a href="https://poi.apache.org/components/?utm_source=chatgpt.com" title="Apache POI™ - Component Overview">Apache POI</a>)</p>
+<p>실무적으로는 보통 이렇게 대응합니다.</p>
+<ul>
+<li>Spire Excel Workbook → <code>Workbook</code>, <code>XSSFWorkbook</code>, <code>HSSFWorkbook</code>, <code>SXSSFWorkbook</code></li>
+<li>Spire Worksheet → <code>Sheet</code></li>
+<li>Spire Row/Cell → <code>Row</code>, <code>Cell</code></li>
+<li>Spire Range → <code>CellRangeAddress</code></li>
+<li>Spire Word Document → <code>XWPFDocument</code> 또는 <code>HWPFDocument</code></li>
+<li>Spire PowerPoint Presentation → <code>XMLSlideShow</code> 또는 <code>HSLFSlideShow</code></li>
+</ul>
+<hr />
+<h2 id="4">4. 의존성 교체<a class="headerlink" href="#4" title="Permanent link">&para;</a></h2>
+<p>Spring Boot 서비스에서는 보통 Maven 기준으로 먼저 의존성을 분리합니다.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nt">&lt;properties&gt;</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">    </span><span class="nt">&lt;poi.version&gt;</span>5.5.1<span class="nt">&lt;/poi.version&gt;</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="nt">&lt;/properties&gt;</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="nt">&lt;dependencies&gt;</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">    </span><span class="cm">&lt;!-- Excel / 공통 --&gt;</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">    </span><span class="nt">&lt;dependency&gt;</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w">        </span><span class="nt">&lt;groupId&gt;</span>org.apache.poi<span class="nt">&lt;/groupId&gt;</span>
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="w">        </span><span class="nt">&lt;artifactId&gt;</span>poi<span class="nt">&lt;/artifactId&gt;</span>
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="w">        </span><span class="nt">&lt;version&gt;</span>${poi.version}<span class="nt">&lt;/version&gt;</span>
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="w">    </span><span class="nt">&lt;/dependency&gt;</span>
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="w">    </span><span class="cm">&lt;!-- OOXML: xlsx / docx / pptx --&gt;</span>
+<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="w">    </span><span class="nt">&lt;dependency&gt;</span>
+<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="w">        </span><span class="nt">&lt;groupId&gt;</span>org.apache.poi<span class="nt">&lt;/groupId&gt;</span>
+<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="w">        </span><span class="nt">&lt;artifactId&gt;</span>poi-ooxml<span class="nt">&lt;/artifactId&gt;</span>
+<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="w">        </span><span class="nt">&lt;version&gt;</span>${poi.version}<span class="nt">&lt;/version&gt;</span>
+<a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a><span class="w">    </span><span class="nt">&lt;/dependency&gt;</span>
+<a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a>
+<a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a><span class="w">    </span><span class="cm">&lt;!-- 구형 포맷 doc / ppt 등 필요 시 --&gt;</span>
+<a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a><span class="w">    </span><span class="nt">&lt;dependency&gt;</span>
+<a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a><span class="w">        </span><span class="nt">&lt;groupId&gt;</span>org.apache.poi<span class="nt">&lt;/groupId&gt;</span>
+<a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a><span class="w">        </span><span class="nt">&lt;artifactId&gt;</span>poi-scratchpad<span class="nt">&lt;/artifactId&gt;</span>
+<a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a><span class="w">        </span><span class="nt">&lt;version&gt;</span>${poi.version}<span class="nt">&lt;/version&gt;</span>
+<a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a><span class="w">    </span><span class="nt">&lt;/dependency&gt;</span>
+<a id="__codelineno-1-26" name="__codelineno-1-26" href="#__codelineno-1-26"></a><span class="nt">&lt;/dependencies&gt;</span>
+</code></pre></div>
+<p>주의할 점이 하나 있습니다. OOXML 스키마가 많이 필요한 고급 기능을 쓰면 <code>poi-ooxml-lite</code>로 부족할 수 있고, 이 경우 FAQ에서 말하는 <strong>full schema</strong> 계열을 검토해야 합니다. POI FAQ는 <code>poi-ooxml-lite</code>와 <code>poi-ooxml-full</code>의 차이를 안내합니다. (<a href="https://poi.apache.org/download.html?utm_source=chatgpt.com" title="Apache POI™ - Download Release Artifacts">Apache POI</a>)</p>
+<p>또 운영 환경에 <strong>옛날 POI jar가 숨어 있으면</strong> <code>MethodNotFoundException</code>, <code>IncompatibleClassChangeError</code> 같은 충돌이 날 수 있다고 FAQ가 경고합니다. 기존 WAS/lib, 공통 모듈, 사내 공통 라이브러리에 오래된 POI가 섞여 있지 않은지 반드시 확인해야 합니다. (<a href="https://poi.apache.org/help/faq.html?utm_source=chatgpt.com" title="Frequently Asked Questions">Apache POI</a>)</p>
+<hr />
+<h2 id="5">5. 추천하는 전환 방식<a class="headerlink" href="#5" title="Permanent link">&para;</a></h2>
+<h3 id="5-1">5-1. 한 번에 갈아엎지 말고 어댑터 계층을 먼저 만드세요<a class="headerlink" href="#5-1" title="Permanent link">&para;</a></h3>
+<p>가장 안전한 방식은 서비스 코드가 Spire/POI를 직접 모르도록 만드는 것입니다.</p>
+<p>예를 들면:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kd">public</span><span class="w"> </span><span class="kd">interface</span> <span class="nc">ExcelDocumentPort</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">    </span><span class="kt">byte</span><span class="o">[]</span><span class="w"> </span><span class="nf">createReport</span><span class="p">(</span><span class="n">ReportData</span><span class="w"> </span><span class="n">data</span><span class="p">)</span><span class="w"> </span><span class="kd">throws</span><span class="w"> </span><span class="n">Exception</span><span class="p">;</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">    </span><span class="n">ParsedExcel</span><span class="w"> </span><span class="nf">read</span><span class="p">(</span><span class="n">InputStream</span><span class="w"> </span><span class="n">inputStream</span><span class="p">)</span><span class="w"> </span><span class="kd">throws</span><span class="w"> </span><span class="n">Exception</span><span class="p">;</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="p">}</span>
+</code></pre></div>
+<p>그다음 구현을 두 개 둡니다.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">SpireExcelDocumentPort</span><span class="w"> </span><span class="kd">implements</span><span class="w"> </span><span class="n">ExcelDocumentPort</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">    </span><span class="nd">@Override</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kt">byte</span><span class="o">[]</span><span class="w"> </span><span class="nf">createReport</span><span class="p">(</span><span class="n">ReportData</span><span class="w"> </span><span class="n">data</span><span class="p">)</span><span class="w"> </span><span class="kd">throws</span><span class="w"> </span><span class="n">Exception</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">        </span><span class="c1">// 기존 Spire 구현</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="kc">null</span><span class="p">;</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="w">    </span><span class="nd">@Override</span>
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="n">ParsedExcel</span><span class="w"> </span><span class="nf">read</span><span class="p">(</span><span class="n">InputStream</span><span class="w"> </span><span class="n">inputStream</span><span class="p">)</span><span class="w"> </span><span class="kd">throws</span><span class="w"> </span><span class="n">Exception</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="w">        </span><span class="c1">// 기존 Spire 구현</span>
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="kc">null</span><span class="p">;</span>
+<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="p">}</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">PoiExcelDocumentPort</span><span class="w"> </span><span class="kd">implements</span><span class="w"> </span><span class="n">ExcelDocumentPort</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">    </span><span class="nd">@Override</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kt">byte</span><span class="o">[]</span><span class="w"> </span><span class="nf">createReport</span><span class="p">(</span><span class="n">ReportData</span><span class="w"> </span><span class="n">data</span><span class="p">)</span><span class="w"> </span><span class="kd">throws</span><span class="w"> </span><span class="n">Exception</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="w">        </span><span class="c1">// Apache POI 구현</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="kc">null</span><span class="p">;</span>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="w">    </span><span class="nd">@Override</span>
+<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="n">ParsedExcel</span><span class="w"> </span><span class="nf">read</span><span class="p">(</span><span class="n">InputStream</span><span class="w"> </span><span class="n">inputStream</span><span class="p">)</span><span class="w"> </span><span class="kd">throws</span><span class="w"> </span><span class="n">Exception</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="w">        </span><span class="c1">// Apache POI 구현</span>
+<a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="kc">null</span><span class="p">;</span>
+<a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a><span class="p">}</span>
+</code></pre></div>
+<p>그리고 서비스는 포트만 보게 합니다.</p>
+<p>이렇게 해야:</p>
+<ul>
+<li>파일 종류별 순차 전환 가능</li>
+<li>A/B 테스트 가능</li>
+<li>장애 시 롤백 쉬움</li>
+<li>테스트 코드 재사용 가능</li>
+</ul>
+<hr />
+<h2 id="6">6. 기능별 상세 마이그레이션 방법<a class="headerlink" href="#6" title="Permanent link">&para;</a></h2>
+<h1 id="6-1-excel">6-1. Excel 먼저 옮기기<a class="headerlink" href="#6-1-excel" title="Permanent link">&para;</a></h1>
+<p>실무적으로 가장 먼저 옮기기 좋은 것이 Excel입니다. POI는 Excel 지원이 가장 성숙하고, 공통 SS API와 대용량 쓰기용 SXSSF도 제공합니다. (<a href="https://poi.apache.org/?utm_source=chatgpt.com" title="Apache POI™ - the Java API for Microsoft Documents">Apache POI</a>)</p>
+<h3 id="_1">절차<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
+<ol>
+<li>
+<p><strong>파일 포맷 결정</strong></p>
+</li>
+<li>
+<p><code>.xlsx</code> 중심이면 <code>XSSFWorkbook</code></p>
+</li>
+<li>매우 큰 파일 쓰기면 <code>SXSSFWorkbook</code></li>
+<li>
+<p><code>.xls</code> 유지 필요하면 <code>HSSFWorkbook</code></p>
+</li>
+<li>
+<p><strong>기본 API 치환</strong></p>
+</li>
+<li>
+<p>Workbook 생성</p>
+</li>
+<li>Sheet 생성</li>
+<li>Row / Cell 생성</li>
+<li>CellStyle, Font, DataFormat 이식</li>
+<li>
+<p>병합 셀, 너비, 높이, 정렬 이식</p>
+</li>
+<li>
+<p><strong>수식 처리 이식</strong></p>
+</li>
+<li>
+<p><code>setCellFormula(...)</code></p>
+</li>
+<li>필요하면 <code>FormulaEvaluator</code></li>
+<li>
+<p>일부 계산은 Excel 열기 시 재계산 유도도 가능</p>
+</li>
+<li>
+<p><strong>대용량 처리</strong></p>
+</li>
+<li>
+<p>생성 건수가 많으면 <code>SXSSFWorkbook</code></p>
+</li>
+<li>메모리 튜닝</li>
+<li>HTTP 응답 스트리밍 방식 검토</li>
+</ol>
+<h3 id="_2">기본 예시<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="n">Workbook</span><span class="w"> </span><span class="n">workbook</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">XSSFWorkbook</span><span class="p">();</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="n">Sheet</span><span class="w"> </span><span class="n">sheet</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">workbook</span><span class="p">.</span><span class="na">createSheet</span><span class="p">(</span><span class="s">&quot;report&quot;</span><span class="p">);</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="n">Row</span><span class="w"> </span><span class="n">header</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sheet</span><span class="p">.</span><span class="na">createRow</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="n">Cell</span><span class="w"> </span><span class="n">headerCell</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">header</span><span class="p">.</span><span class="na">createCell</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="n">headerCell</span><span class="p">.</span><span class="na">setCellValue</span><span class="p">(</span><span class="s">&quot;이름&quot;</span><span class="p">);</span>
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="n">CellStyle</span><span class="w"> </span><span class="n">style</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">workbook</span><span class="p">.</span><span class="na">createCellStyle</span><span class="p">();</span>
+<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a><span class="n">Font</span><span class="w"> </span><span class="n">font</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">workbook</span><span class="p">.</span><span class="na">createFont</span><span class="p">();</span>
+<a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a><span class="n">font</span><span class="p">.</span><span class="na">setBold</span><span class="p">(</span><span class="kc">true</span><span class="p">);</span>
+<a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a><span class="n">style</span><span class="p">.</span><span class="na">setFont</span><span class="p">(</span><span class="n">font</span><span class="p">);</span>
+<a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a><span class="n">headerCell</span><span class="p">.</span><span class="na">setCellStyle</span><span class="p">(</span><span class="n">style</span><span class="p">);</span>
+<a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a>
+<a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a><span class="n">Row</span><span class="w"> </span><span class="n">row</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sheet</span><span class="p">.</span><span class="na">createRow</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+<a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a><span class="n">row</span><span class="p">.</span><span class="na">createCell</span><span class="p">(</span><span class="mi">0</span><span class="p">).</span><span class="na">setCellValue</span><span class="p">(</span><span class="s">&quot;홍길동&quot;</span><span class="p">);</span>
+<a id="__codelineno-5-16" name="__codelineno-5-16" href="#__codelineno-5-16"></a>
+<a id="__codelineno-5-17" name="__codelineno-5-17" href="#__codelineno-5-17"></a><span class="k">try</span><span class="w"> </span><span class="p">(</span><span class="n">ByteArrayOutputStream</span><span class="w"> </span><span class="n">bos</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ByteArrayOutputStream</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-5-18" name="__codelineno-5-18" href="#__codelineno-5-18"></a><span class="w">    </span><span class="n">workbook</span><span class="p">.</span><span class="na">write</span><span class="p">(</span><span class="n">bos</span><span class="p">);</span>
+<a id="__codelineno-5-19" name="__codelineno-5-19" href="#__codelineno-5-19"></a><span class="w">    </span><span class="n">workbook</span><span class="p">.</span><span class="na">close</span><span class="p">();</span>
+<a id="__codelineno-5-20" name="__codelineno-5-20" href="#__codelineno-5-20"></a><span class="w">    </span><span class="kt">byte</span><span class="o">[]</span><span class="w"> </span><span class="n">bytes</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">bos</span><span class="p">.</span><span class="na">toByteArray</span><span class="p">();</span>
+<a id="__codelineno-5-21" name="__codelineno-5-21" href="#__codelineno-5-21"></a><span class="p">}</span>
+</code></pre></div>
+<h3 id="workbookfactory">읽기 쪽은 가능하면 <code>WorkbookFactory</code> 우선<a class="headerlink" href="#workbookfactory" title="Permanent link">&para;</a></h3>
+<p>포맷 자동 판별이 필요하면 <code>WorkbookFactory</code>가 편합니다. 텍스트 추출도 문서 타입별 팩토리 계열이 있어 Spire의 “한 API로 여러 형식 처리” 감각을 일부 흉내 낼 수 있습니다. (<a href="https://poi.apache.org/text-extraction.html?utm_source=chatgpt.com" title="Apache POI™ - Text Extraction">Apache POI</a>)</p>
+<h3 id="excel">대용량 Excel 주의<a class="headerlink" href="#excel" title="Permanent link">&para;</a></h3>
+<p>POI 공식 문서는 <strong>대용량 쓰기에는 SXSSF</strong>, 매우 큰 파일 읽기에는 스트리밍 성격의 접근을 보라고 안내합니다. SXSSF는 sliding window 방식이라 오래된 row는 다시 접근이 제한됩니다. 즉, Spire처럼 마음대로 뒤돌아가 수정하던 코드는 구조를 바꿔야 합니다. (<a href="https://poi.apache.org/components/spreadsheet/how-to.html?utm_source=chatgpt.com" title="The New Halloween Document - Apache POI">Apache POI</a>)</p>
+<hr />
+<h1 id="6-2-word">6-2. Word 마이그레이션<a class="headerlink" href="#6-2-word" title="Permanent link">&para;</a></h1>
+<p>Word는 <code>.docx</code>면 <code>XWPF</code>, <code>.doc</code>면 <code>HWPF</code>입니다. 다만 Word 쪽은 Excel만큼 매끄럽지 않을 수 있으니, 문단/표/이미지/헤더푸터 단위로 기능을 나눠서 옮기는 것이 좋습니다. <code>HWPF</code>는 공식 컴포넌트 설명에서도 초기 단계 성격이 남아 있고, <code>.docx</code> 중심이면 <code>XWPF</code> 우선 전략이 좋습니다. (<a href="https://poi.apache.org/components/?utm_source=chatgpt.com" title="Apache POI™ - Component Overview">Apache POI</a>)</p>
+<h3 id="_3">절차<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<ol>
+<li>현재 문서가 <code>.docx</code>인지 <code>.doc</code>인지 분리</li>
+<li><code>Paragraph</code>, <code>Run</code>, <code>Table</code>, <code>Header/Footer</code> 사용처 분리</li>
+<li>템플릿 기반 생성인지, 코드 생성인지 구분</li>
+<li>서식 fidelity 테스트를 별도 수행</li>
+</ol>
+<h3 id="_4">기본 예시<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="n">XWPFDocument</span><span class="w"> </span><span class="n">document</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">XWPFDocument</span><span class="p">();</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="n">XWPFParagraph</span><span class="w"> </span><span class="n">paragraph</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">document</span><span class="p">.</span><span class="na">createParagraph</span><span class="p">();</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="n">XWPFRun</span><span class="w"> </span><span class="n">run</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">paragraph</span><span class="p">.</span><span class="na">createRun</span><span class="p">();</span>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="n">run</span><span class="p">.</span><span class="na">setText</span><span class="p">(</span><span class="s">&quot;안녕하세요.&quot;</span><span class="p">);</span>
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="n">run</span><span class="p">.</span><span class="na">setBold</span><span class="p">(</span><span class="kc">true</span><span class="p">);</span>
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>
+<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="k">try</span><span class="w"> </span><span class="p">(</span><span class="n">ByteArrayOutputStream</span><span class="w"> </span><span class="n">bos</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ByteArrayOutputStream</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a><span class="w">    </span><span class="n">document</span><span class="p">.</span><span class="na">write</span><span class="p">(</span><span class="n">bos</span><span class="p">);</span>
+<a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a><span class="w">    </span><span class="n">document</span><span class="p">.</span><span class="na">close</span><span class="p">();</span>
+<a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a><span class="w">    </span><span class="kt">byte</span><span class="o">[]</span><span class="w"> </span><span class="n">bytes</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">bos</span><span class="p">.</span><span class="na">toByteArray</span><span class="p">();</span>
+<a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a><span class="p">}</span>
+</code></pre></div>
+<h3 id="word">Word에서 꼭 확인할 것<a class="headerlink" href="#word" title="Permanent link">&para;</a></h3>
+<p>Spire에서 아래를 많이 썼다면 난이도가 올라갑니다.</p>
+<ul>
+<li>문서 레이아웃을 정밀하게 맞추는 기능</li>
+<li>복잡한 표 병합</li>
+<li>이미지 배치 정밀 제어</li>
+<li>PDF 변환</li>
+</ul>
+<p>POI 공식 문서는 <code>HWPF</code> 쪽에 Word-to-HTML, Word-to-FO 변환기를 언급하고, <code>.doc</code>에 대해 FOP와 연계해 PDF 생성이 가능하다고 설명합니다. 다만 이것은 <strong>일반적인 DOCX/PDF 대체 솔루션으로 보기는 어렵고</strong>, 적어도 “Spire의 SaveToPdf를 그대로 치환”하는 방식은 아니라는 뜻으로 받아들이는 것이 안전합니다. 이 부분은 기능 요구를 따로 떼어 설계하는 것이 좋습니다. (<a href="https://poi.apache.org/components/document/?utm_source=chatgpt.com" title="HWPF and XWPF - Java API to Handle Microsoft Word Files">Apache POI</a>)</p>
+<hr />
+<h1 id="6-3-powerpoint">6-3. PowerPoint 마이그레이션<a class="headerlink" href="#6-3-powerpoint" title="Permanent link">&para;</a></h1>
+<p>PowerPoint는 <code>.pptx</code>면 <code>XSLF</code>, <code>.ppt</code>면 <code>HSLF</code>입니다. 슬라이드 생성, 텍스트, 도형, 이미지, 기본 차트 정도는 가능하지만, PowerPoint도 Excel보다 검증 범위를 더 넓게 잡아야 합니다. (<a href="https://poi.apache.org/components/slideshow/?utm_source=chatgpt.com" title="Java API To Access Microsoft Powerpoint Format Files">Apache POI</a>)</p>
+<h3 id="_5">절차<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<ol>
+<li>슬라이드 추가/복제/삭제</li>
+<li>텍스트 상자, 이미지, 도형 추가</li>
+<li>기존 템플릿 import 여부 확인</li>
+<li>썸네일/이미지 렌더링 필요 여부 확인</li>
+</ol>
+<h3 id="_6">기본 예시<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="n">XMLSlideShow</span><span class="w"> </span><span class="n">ppt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">XMLSlideShow</span><span class="p">();</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="n">XSLFSlide</span><span class="w"> </span><span class="n">slide</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ppt</span><span class="p">.</span><span class="na">createSlide</span><span class="p">();</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="n">XSLFTextBox</span><span class="w"> </span><span class="n">textBox</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">slide</span><span class="p">.</span><span class="na">createTextBox</span><span class="p">();</span>
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="n">textBox</span><span class="p">.</span><span class="na">setAnchor</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">java</span><span class="p">.</span><span class="na">awt</span><span class="p">.</span><span class="na">Rectangle</span><span class="p">(</span><span class="mi">50</span><span class="p">,</span><span class="w"> </span><span class="mi">50</span><span class="p">,</span><span class="w"> </span><span class="mi">400</span><span class="p">,</span><span class="w"> </span><span class="mi">80</span><span class="p">));</span>
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="n">textBox</span><span class="p">.</span><span class="na">setText</span><span class="p">(</span><span class="s">&quot;제목&quot;</span><span class="p">);</span>
+<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>
+<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="k">try</span><span class="w"> </span><span class="p">(</span><span class="n">ByteArrayOutputStream</span><span class="w"> </span><span class="n">bos</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ByteArrayOutputStream</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a><span class="w">    </span><span class="n">ppt</span><span class="p">.</span><span class="na">write</span><span class="p">(</span><span class="n">bos</span><span class="p">);</span>
+<a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a><span class="w">    </span><span class="n">ppt</span><span class="p">.</span><span class="na">close</span><span class="p">();</span>
+<a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a><span class="w">    </span><span class="kt">byte</span><span class="o">[]</span><span class="w"> </span><span class="n">bytes</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">bos</span><span class="p">.</span><span class="na">toByteArray</span><span class="p">();</span>
+<a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a><span class="p">}</span>
+</code></pre></div>
+<p>POI는 공식적으로 슬라이드를 이미지로 렌더링하는 <code>PPTX2PNG</code> 유틸리티와 <code>slide.draw(graphics)</code> 기반 렌더링 경로를 제공합니다. 따라서 <strong>PPT/PPTX → 이미지 썸네일</strong> 수준은 POI로 접근 가능합니다. (<a href="https://poi.apache.org/components/slideshow/ppt-wmf-emf-renderer.html?utm_source=chatgpt.com" title="Rendering slideshows, WMF, EMF and EMF+ - Apache POI">Apache POI</a>)</p>
+<hr />
+<h2 id="7-pdf">7. PDF 관련 판단<a class="headerlink" href="#7-pdf" title="Permanent link">&para;</a></h2>
+<p>이 부분이 제일 중요합니다.</p>
+<p>Apache POI의 주력 범위는 Office 문서 포맷 조작입니다. 따라서 현재 Spire에서 하고 있는 것이 아래라면 별도 설계가 필요합니다.</p>
+<ul>
+<li>Word/Excel/PPT를 PDF로 직접 변환</li>
+<li>PDF를 읽고 수정</li>
+<li>PDF를 이미지로 변환</li>
+<li>PDF 텍스트 추출</li>
+</ul>
+<p>Free Spire.Office는 공식 다운로드 페이지에서도 Word/PowerPoint/PDF에 페이지 제한이 있다고 안내합니다. 그래서 Spire Free에서 벗어나려는 이유가 “제한/라이선스/경량화”라면 이해되지만, <strong>POI만으로 모든 PDF 시나리오를 대체한다고 가정하면 중간에 막힐 가능성이 큽니다.</strong> (<a href="https://www.e-iceblue.com/Download/office-for-java-free.html?utm_source=chatgpt.com" title="Downloads - Free Spire.Office for Java">E-ICEBLUE</a>)</p>
+<p>즉, 현재 코드에 이런 것이 있으면 먼저 표시해 두셔야 합니다.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="n">document</span><span class="p">.</span><span class="na">saveToFile</span><span class="p">(</span><span class="s">&quot;x.pdf&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">FileFormat</span><span class="p">.</span><span class="na">PDF</span><span class="p">);</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="n">workbook</span><span class="p">.</span><span class="na">saveToFile</span><span class="p">(</span><span class="s">&quot;x.pdf&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">FileFormat</span><span class="p">.</span><span class="na">PDF</span><span class="p">);</span>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="n">presentation</span><span class="p">.</span><span class="na">saveToFile</span><span class="p">(</span><span class="s">&quot;x.pdf&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">FileFormat</span><span class="p">.</span><span class="na">PDF</span><span class="p">);</span>
+</code></pre></div>
+<p>이건 “POI 전환” 대상이 아니라 <strong>“POI + 별도 변환 전략”</strong> 대상입니다.</p>
+<hr />
+<h2 id="8">8. 보안/운영 관점에서 꼭 넣어야 할 절차<a class="headerlink" href="#8" title="Permanent link">&para;</a></h2>
+<p>POI 공식 보안 문서는 <strong>신뢰할 수 없는 문서 업로드를 처리할 때 추가 보호 계층을 두라</strong>고 안내합니다. 업로드 문서를 다루는 Spring Boot 서비스라면 이건 꼭 포함해야 합니다. (<a href="https://poi.apache.org/security.html?utm_source=chatgpt.com" title="Apache POI™ - Security guidance">Apache POI</a>)</p>
+<p>권장 절차는 이렇습니다.</p>
+<ol>
+<li>업로드 파일 크기 제한</li>
+<li>확장자만 보지 말고 MIME/시그니처 검사</li>
+<li>파싱 전 임시 저장소 격리</li>
+<li>처리 시간 제한</li>
+<li>대용량 문서는 별도 워커로 분리</li>
+<li>실패 시 원본 보존 및 오류 로그 표준화</li>
+<li>암호 문서는 별도 처리 경로</li>
+</ol>
+<p>POI는 암호화된 Office 파일 일부를 읽고 처리하는 기능도 제공합니다. 암호 문서를 현재 Spire에서 처리 중이라면 이 기능은 별도 테스트 항목으로 빼야 합니다. (<a href="https://poi.apache.org/encryption.html?utm_source=chatgpt.com" title="Apache POI™ - Encryption support">Apache POI</a>)</p>
+<hr />
+<h2 id="9">9. 테스트 절차<a class="headerlink" href="#9" title="Permanent link">&para;</a></h2>
+<p>마이그레이션에서 제일 많이 실패하는 지점은 “파일은 열리는데 모양이 달라짐”입니다.</p>
+<p>그래서 테스트를 3단계로 하셔야 합니다.</p>
+<h3 id="9-1">9-1. 구조 테스트<a class="headerlink" href="#9-1" title="Permanent link">&para;</a></h3>
+<ul>
+<li>시트 수 / 슬라이드 수 / 문단 수</li>
+<li>셀 값 / 텍스트 값</li>
+<li>병합 범위</li>
+<li>헤더/푸터 존재 여부</li>
+<li>이미지 개수</li>
+</ul>
+<h3 id="9-2">9-2. 서식 테스트<a class="headerlink" href="#9-2" title="Permanent link">&para;</a></h3>
+<ul>
+<li>폰트</li>
+<li>굵기</li>
+<li>배경색</li>
+<li>테두리</li>
+<li>정렬</li>
+<li>열 너비 / 행 높이</li>
+<li>표 구조</li>
+</ul>
+<h3 id="9-3">9-3. 사용자 체감 테스트<a class="headerlink" href="#9-3" title="Permanent link">&para;</a></h3>
+<ul>
+<li>실제 Office에서 열리는지</li>
+<li>깨짐이 없는지</li>
+<li>인쇄/PDF 시 모양이 허용 범위인지</li>
+</ul>
+<p>가장 좋은 방식은 <strong>Golden file 테스트</strong>입니다.</p>
+<ul>
+<li>기존 Spire 결과물 저장</li>
+<li>POI 결과물 저장</li>
+<li>내용 비교</li>
+<li>사람이 보는 대표 샘플 시각 비교</li>
+</ul>
+<p>바이너리 파일은 내부 메타데이터 차이 때문에 byte-by-byte 비교는 부정확할 수 있어서, <strong>구조 비교 + 눈으로 확인할 샘플 비교</strong>를 같이 두는 것이 좋습니다.</p>
+<hr />
+<h2 id="10">10. 실무형 추천 마이그레이션 순서<a class="headerlink" href="#10" title="Permanent link">&para;</a></h2>
+<p>제가 추천하는 순서는 이렇습니다.</p>
+<h3 id="1_1">1단계<a class="headerlink" href="#1_1" title="Permanent link">&para;</a></h3>
+<p><strong>Excel부터 이전</strong></p>
+<ul>
+<li>POI가 가장 강함</li>
+<li>성공 경험 만들기 좋음</li>
+<li>보고서/다운로드 기능 먼저 안정화 가능</li>
+</ul>
+<h3 id="2_1">2단계<a class="headerlink" href="#2_1" title="Permanent link">&para;</a></h3>
+<p><strong>DOCX 생성 기능 이전</strong></p>
+<ul>
+<li>단순 문단/표 중심부터</li>
+<li>템플릿 복잡도 낮은 문서 우선</li>
+</ul>
+<h3 id="3">3단계<a class="headerlink" href="#3" title="Permanent link">&para;</a></h3>
+<p><strong>PPTX 이전</strong></p>
+<ul>
+<li>생성 기능부터</li>
+<li>렌더링/썸네일은 별도 검증</li>
+</ul>
+<h3 id="4_1">4단계<a class="headerlink" href="#4_1" title="Permanent link">&para;</a></h3>
+<p><strong>PDF 관련 기능 분리</strong></p>
+<ul>
+<li>“POI로 대체”가 아니라 “독립 기능”으로 재설계</li>
+</ul>
+<h3 id="5_1">5단계<a class="headerlink" href="#5_1" title="Permanent link">&para;</a></h3>
+<p><strong>구형 포맷(.doc/.ppt/.xls) 지원 여부 최종 결정</strong></p>
+<ul>
+<li>꼭 필요한 것만 유지</li>
+<li>가능하면 OOXML(.docx/.xlsx/.pptx)로 표준화</li>
+</ul>
+<hr />
+<h2 id="11">11. 실제 작업 항목 체크리스트<a class="headerlink" href="#11" title="Permanent link">&para;</a></h2>
+<p>바로 착수용으로 정리하면 아래 순서가 좋습니다.</p>
+<h3 id="_7">준비<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code>com.spire</code> import 전수조사</li>
+<li>기능 목록 작성</li>
+<li>파일 타입별 분류</li>
+<li>PDF 의존 기능 표시</li>
+</ul>
+<h3 id="_8">기술 설계<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Office 포트 인터페이스 작성</li>
+<li>Spire 구현 / POI 구현 분리</li>
+<li>공통 DTO 설계</li>
+<li>예외 체계 통일</li>
+</ul>
+<h3 id="_9">개발<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Maven 의존성 추가</li>
+<li>Excel 기능 이전</li>
+<li>Word 기능 이전</li>
+<li>PowerPoint 기능 이전</li>
+<li>대용량 처리 최적화</li>
+</ul>
+<h3 id="_10">검증<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h3>
+<ul>
+<li>단위 테스트</li>
+<li>Golden file 비교</li>
+<li>실제 Office 열기 테스트</li>
+<li>운영 샘플 데이터 검증</li>
+</ul>
+<h3 id="_11">전환<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h3>
+<ul>
+<li>feature flag로 병행 운영</li>
+<li>일부 API만 POI 전환</li>
+<li>로그/에러율 비교</li>
+<li>Spire 제거</li>
+</ul>
+<hr />
+<h2 id="12">12. 진행 중 자주 만나는 문제<a class="headerlink" href="#12" title="Permanent link">&para;</a></h2>
+<h3 id="1-spire-poi">문제 1. Spire는 몇 줄인데 POI는 코드가 길다<a class="headerlink" href="#1-spire-poi" title="Permanent link">&para;</a></h3>
+<p>정상입니다.
+Spire는 고수준 편의 API가 많고, POI는 상대적으로 저수준 조합이 많습니다.</p>
+<h3 id="2-wordppt-100">문제 2. Word/PPT가 100% 동일하게 안 나온다<a class="headerlink" href="#2-wordppt-100" title="Permanent link">&para;</a></h3>
+<p>가능성이 있습니다.
+특히 정교한 레이아웃 문서는 사전 허용 오차를 정해야 합니다. (<a href="https://poi.apache.org/?utm_source=chatgpt.com" title="Apache POI™ - the Java API for Microsoft Documents">Apache POI</a>)</p>
+<h3 id="3-excel">문제 3. 대용량 Excel에서 메모리가 많이 든다<a class="headerlink" href="#3-excel" title="Permanent link">&para;</a></h3>
+<p><code>SXSSFWorkbook</code>로 바꾸고, “한 번 쓴 row를 다시 수정하는 방식”을 버려야 합니다. (<a href="https://poi.apache.org/components/spreadsheet/how-to.html?utm_source=chatgpt.com" title="The New Halloween Document - Apache POI">Apache POI</a>)</p>
+<h3 id="4_2">문제 4. 배포 후 클래스 충돌이 난다<a class="headerlink" href="#4_2" title="Permanent link">&para;</a></h3>
+<p>오래된 POI jar 중복 가능성이 큽니다. 공식 FAQ가 바로 이 케이스를 다룹니다. (<a href="https://poi.apache.org/help/faq.html?utm_source=chatgpt.com" title="Frequently Asked Questions">Apache POI</a>)</p>
+<hr />
+<h2 id="13">13. 제일 현실적인 결론<a class="headerlink" href="#13" title="Permanent link">&para;</a></h2>
+<p>현실적으로는 이렇게 보시면 됩니다.</p>
+<ul>
+<li><strong>Excel 중심 서비스</strong>라면 Apache POI 전환은 매우 현실적입니다. (<a href="https://poi.apache.org/components/spreadsheet/?utm_source=chatgpt.com" title="POI-HSSF and POI-XSSF/SXSSF - Java API To Access ...">Apache POI</a>)</li>
+<li><strong>DOCX/PPTX 기본 생성/수정</strong>도 충분히 가능합니다. (<a href="https://poi.apache.org/components/document/?utm_source=chatgpt.com" title="HWPF and XWPF - Java API to Handle Microsoft Word Files">Apache POI</a>)</li>
+<li><strong>PDF 변환/고정밀 렌더링까지 Spire처럼 한 번에 대체</strong>하려고 하면 설계가 틀어질 수 있습니다. 이 부분은 별도 기능으로 분리해서 봐야 합니다. (<a href="https://poi.apache.org/?utm_source=chatgpt.com" title="Apache POI™ - the Java API for Microsoft Documents">Apache POI</a>)</li>
+</ul>
+<p>원하시면 다음 단계로 이어서 <strong>“Spire 클래스/메서드 → Apache POI 클래스/코드” 매핑표</strong>를 사용 중인 코드 기준으로 상세하게 작성해드리겠습니다.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  맨위로
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\ud074\ub9bd\ubcf4\ub4dc\uc5d0 \ubcf5\uc0ac\ub428", "clipboard.copy": "\ud074\ub9bd\ubcf4\ub4dc\ub85c \ubcf5\uc0ac", "search.result.more.one": "\uc774 \ubb38\uc11c\uc5d0\uc11c 1\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.more.other": "\uc774 \ubb38\uc11c\uc5d0\uc11c #\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.none": "\uac80\uc0c9\uc5b4\uc640 \uc77c\uce58\ud558\ub294 \ubb38\uc11c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4", "search.result.one": "1\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.other": "#\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.placeholder": "\uac80\uc0c9\uc5b4\ub97c \uc785\ub825\ud558\uc138\uc694", "search.result.term.missing": "\ud3ec\ud568\ub418\uc9c0 \uc54a\uc740 \uac80\uc0c9\uc5b4", "select.version": "\ubc84\uc804 \uc120\ud0dd"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
